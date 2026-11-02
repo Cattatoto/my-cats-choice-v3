@@ -107,12 +107,12 @@ div[data-testid="stFileUploader"] {
 
 /* White text inside upload areas */
 div[data-testid="stFileUploader"] * {
-    color: #FFFFFF !important;
+    color: #D0D0D0 !important;
 }
 
 /* White upload instructions */
 div[data-testid="stFileUploader"] label {
-    color: #D0D0D0 !important;
+    color: #FFFFFF !important;
 }
 
 /* Upload button */
