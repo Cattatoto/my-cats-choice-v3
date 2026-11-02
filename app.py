@@ -3,6 +3,7 @@ import streamlit as st
 from google import genai
 from PIL import Image
 import requests
+import time
 from io import BytesIO
 from datetime import datetime, timezone
 
@@ -280,10 +281,19 @@ IMPORTANT RULES:
                     for img in images_b:
                         contents.append(img)
 
-                    result = client.models.generate_content(
+                  for attempt in range(3):
+                        try:
+                        result = client.models.generate_content(
                         model="gemini-3.8-flash",
                         contents=contents
-                    )
+                        )
+                        break
+
+                        except Exception as e:
+                        if ("503" in str(e) or "UNAVAILABLE" in str(e)) and attempt < 2:
+                        time.sleep(5 * (attempt + 1))
+                        else:
+                        raise
 
                     st.success("🎉 Comparison completed!")
 
