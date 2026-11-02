@@ -56,32 +56,76 @@ CURRENCIES = [
 
 st.markdown("""
 <style>
+
 .stApp {
-    background: linear-gradient(135deg, #fff0f6, #f0eaff, #e9f8ff);
+    background: linear-gradient(
+        135deg,
+        #FFF1F5,
+        #F1ECFA,
+        #EAF5FC
+    );
 }
+
+/* Main title */
 h1 {
-    color: #a64d79 !important;
+    color: #80558C !important;
     text-align: center;
 }
-h2, h3 {
-    color: #80558c !important;
+
+/* Section headings */
+h2, h3, h4 {
+    color: #80558C !important;
 }
+
+/* Normal text */
+p, li, label, span, div {
+    color: #493750;
+}
+
+/* Buttons */
 .stButton button {
-    background: #ed83b2;
-    color: white;
+    background: #E58AB3;
+    color: #FFFFFF !important;
     border-radius: 18px;
     border: none;
     font-weight: bold;
     width: 100%;
 }
+
 .stButton button:hover {
-    background: #c66b9b;
-    color: white;
+    background: #C96F9B;
+    color: #FFFFFF !important;
 }
+
+/* Upload areas */
 div[data-testid="stFileUploader"] {
-    background: #fff8fc;
+    background: #FFFFFF;
     border-radius: 15px;
+    border: 1px solid #E8C9DD;
+    padding: 10px;
 }
+
+/* Input fields */
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background: #FFFFFF;
+    color: #493750;
+    border: 1px solid #DCC9E8;
+    border-radius: 10px;
+}
+
+/* Comparison results */
+div[data-testid="stMarkdownContainer"] p,
+div[data-testid="stMarkdownContainer"] li {
+    color: #493750;
+}
+
+/* Dividers */
+hr {
+    border-color: #E8D5E8;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
