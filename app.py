@@ -112,7 +112,7 @@ div[data-testid="stFileUploader"] * {
 
 /* White upload instructions */
 div[data-testid="stFileUploader"] label {
-    color: #FFFFFF !important;
+    color: #D0D0D0 !important;
 }
 
 /* Upload button */
