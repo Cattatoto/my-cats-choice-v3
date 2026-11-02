@@ -57,78 +57,78 @@ CURRENCIES = [
 st.markdown("""
 <style>
 
-/* Main background */
+/* Main page */
 .stApp {
     background: linear-gradient(
         135deg,
-        #F4FFF0,
-        #FFFFFF,
-        #E9F8E4
+        #00A83B,
+        #16803C,
+        #A8D900
     );
 }
 
-/* Main title */
-h1 {
-    color: #176B36 !important;
-    text-align: center;
-    font-weight: 800;
-}
-
-/* Section headings */
-h2, h3, h4 {
-    color: #176B36 !important;
-    font-weight: 700;
-}
-
-/* Normal text */
-p, li, label {
-    color: #442B25;
-}
-
-/* Buttons */
-.stButton button {
-    background: #16803C;
+/* Main headings */
+h1, h2, h3, h4 {
     color: #FFFFFF !important;
-    border-radius: 18px;
-    border: none;
-    font-weight: bold;
-    width: 100%;
+    font-weight: 800 !important;
 }
 
-.stButton button:hover {
-    background: #00A83B;
+/* All normal text */
+.stApp p,
+.stApp li,
+.stApp label,
+.stApp span {
     color: #FFFFFF !important;
 }
 
-/* Upload areas */
+/* Buttons: dark background and white text */
+.stButton > button,
+.stDownloadButton > button {
+    background-color: #123D26 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 18px !important;
+    font-weight: bold !important;
+}
+
+/* Button text */
+.stButton > button *,
+.stDownloadButton > button * {
+    color: #FFFFFF !important;
+}
+
+/* Button hover */
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background-color: #005C2B !important;
+    color: #FFFFFF !important;
+}
+
+/* White upload cards */
 div[data-testid="stFileUploader"] {
     background: #FFFFFF;
-    border: 1px solid #D6EBCB;
     border-radius: 15px;
     padding: 10px;
 }
 
-/* Input fields */
+/* Keep upload card text readable */
+div[data-testid="stFileUploader"] * {
+    color: #17452B !important;
+}
+
+/* White input boxes with dark text */
 .stTextInput input,
 .stNumberInput input,
 .stTextArea textarea {
-    background: #FFFFFF;
-    color: #442B25;
-    border: 1px solid #B9DDB0;
-    border-radius: 10px;
+    background: #FFFFFF !important;
+    color: #173D28 !important;
+    border: 2px solid #B8E6B0 !important;
 }
 
-/* Comparison text */
-div[data-testid="stMarkdownContainer"] p,
-div[data-testid="stMarkdownContainer"] li {
-    color: #442B25;
-}
-
-/* Dividers */
+/* White divider */
 hr {
-    border-color: #D6EBCB;
+    border-color: #FFFFFF !important;
 }
-
 
 </style>
 """, unsafe_allow_html=True)
