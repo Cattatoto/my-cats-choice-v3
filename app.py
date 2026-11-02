@@ -57,34 +57,37 @@ CURRENCIES = [
 st.markdown("""
 <style>
 
+/* Main background */
 .stApp {
     background: linear-gradient(
         135deg,
-        #FFF1F5,
-        #F1ECFA,
-        #EAF5FC
+        #F4FFF0,
+        #FFFFFF,
+        #E9F8E4
     );
 }
 
 /* Main title */
 h1 {
-    color: #80558C !important;
+    color: #176B36 !important;
     text-align: center;
+    font-weight: 800;
 }
 
 /* Section headings */
 h2, h3, h4 {
-    color: #80558C !important;
+    color: #176B36 !important;
+    font-weight: 700;
 }
 
 /* Normal text */
-p, li, label, span, div {
-    color: #493750;
+p, li, label {
+    color: #442B25;
 }
 
 /* Buttons */
 .stButton button {
-    background: #E58AB3;
+    background: #16803C;
     color: #FFFFFF !important;
     border-radius: 18px;
     border: none;
@@ -93,15 +96,15 @@ p, li, label, span, div {
 }
 
 .stButton button:hover {
-    background: #C96F9B;
+    background: #00A83B;
     color: #FFFFFF !important;
 }
 
 /* Upload areas */
 div[data-testid="stFileUploader"] {
     background: #FFFFFF;
+    border: 1px solid #D6EBCB;
     border-radius: 15px;
-    border: 1px solid #E8C9DD;
     padding: 10px;
 }
 
@@ -110,21 +113,22 @@ div[data-testid="stFileUploader"] {
 .stNumberInput input,
 .stTextArea textarea {
     background: #FFFFFF;
-    color: #493750;
-    border: 1px solid #DCC9E8;
+    color: #442B25;
+    border: 1px solid #B9DDB0;
     border-radius: 10px;
 }
 
-/* Comparison results */
+/* Comparison text */
 div[data-testid="stMarkdownContainer"] p,
 div[data-testid="stMarkdownContainer"] li {
-    color: #493750;
+    color: #442B25;
 }
 
 /* Dividers */
 hr {
-    border-color: #E8D5E8;
+    border-color: #D6EBCB;
 }
+
 
 </style>
 """, unsafe_allow_html=True)
