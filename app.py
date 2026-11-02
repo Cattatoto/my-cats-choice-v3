@@ -105,8 +105,21 @@ div[data-testid="stFileUploader"] {
     padding: 10px;
 }
 
+/* White text inside upload areas */
 div[data-testid="stFileUploader"] * {
-    color: #493000 !important;
+    color: #FFFFFF !important;
+}
+
+/* White upload instructions */
+div[data-testid="stFileUploader"] label {
+    color: #FFFFFF !important;
+}
+
+/* Upload button */
+div[data-testid="stFileUploader"] button {
+    background-color: #292929 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
 }
 
 /* Input fields */
