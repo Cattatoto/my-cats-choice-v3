@@ -57,23 +57,23 @@ CURRENCIES = [
 st.markdown("""
 <style>
 
-/* Main page */
+/* Main orange background */
 .stApp {
     background: linear-gradient(
         135deg,
-        #00A83B,
-        #16803C,
-        #A8D900
+        #EC9006,
+        #F5A623,
+        #FFD477
     );
 }
 
-/* Main headings */
+/* Headings */
 h1, h2, h3, h4 {
     color: #FFFFFF !important;
     font-weight: 800 !important;
 }
 
-/* All normal text */
+/* Main text */
 .stApp p,
 .stApp li,
 .stApp label,
@@ -81,26 +81,20 @@ h1, h2, h3, h4 {
     color: #FFFFFF !important;
 }
 
-/* Buttons: dark background and white text */
+/* Dark buttons with white text */
 .stButton > button,
 .stDownloadButton > button {
-    background-color: #123D26 !important;
+    background-color: #292929 !important;
     color: #FFFFFF !important;
     border: 1px solid #FFFFFF !important;
     border-radius: 18px !important;
     font-weight: bold !important;
 }
 
-/* Button text */
-.stButton > button *,
-.stDownloadButton > button * {
-    color: #FFFFFF !important;
-}
-
 /* Button hover */
 .stButton > button:hover,
 .stDownloadButton > button:hover {
-    background-color: #005C2B !important;
+    background-color: #493000 !important;
     color: #FFFFFF !important;
 }
 
@@ -111,21 +105,20 @@ div[data-testid="stFileUploader"] {
     padding: 10px;
 }
 
-/* Keep upload card text readable */
 div[data-testid="stFileUploader"] * {
-    color: #17452B !important;
+    color: #493000 !important;
 }
 
-/* White input boxes with dark text */
+/* Input fields */
 .stTextInput input,
 .stNumberInput input,
 .stTextArea textarea {
     background: #FFFFFF !important;
-    color: #173D28 !important;
-    border: 2px solid #B8E6B0 !important;
+    color: #493000 !important;
+    border: 2px solid #F5C36A !important;
 }
 
-/* White divider */
+/* Dividers */
 hr {
     border-color: #FFFFFF !important;
 }
