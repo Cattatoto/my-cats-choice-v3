@@ -281,7 +281,7 @@ IMPORTANT RULES:
                     for img in images_b:
                         contents.append(img)
 
-                                     for attempt in range(3):
+                    for attempt in range(3):
                         try:
                             result = client.models.generate_content(
                                 model="gemini-3.8-flash",
