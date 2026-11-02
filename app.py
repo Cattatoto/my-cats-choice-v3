@@ -61,7 +61,7 @@ st.markdown("""
 .stApp {
     background: linear-gradient(
         135deg,
-        #EE9F27,
+        #F1B04C,
         #F5A623,
         #FFD477
     );
